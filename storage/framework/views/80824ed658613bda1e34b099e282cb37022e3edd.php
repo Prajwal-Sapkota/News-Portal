@@ -23,6 +23,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?php echo e(asset('css/style.css')); ?>" rel="stylesheet">
+    
     <script>
         // JavaScript to insert today's date
         document.addEventListener("DOMContentLoaded", function() {

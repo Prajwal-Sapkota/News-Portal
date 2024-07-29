@@ -3,9 +3,7 @@
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <h1>Galleries</h1>
-    <div class="text-right mb-3">
-        <a href="<?php echo e(route('galleries.create')); ?>" class="btn btn-primary">Create Gallery</a>
-    </div>
+    <a href="<?php echo e(route('galleries.create')); ?>" class="btn btn-primary mb-3">Create Gallery</a>
     <div class="row">
         <?php $__currentLoopData = $galleries; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $gallery): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <div class="col-md-4 mb-4">
@@ -30,5 +28,4 @@
     </div>
 </div>
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\rajen\OneDrive\Documents\Intern\news_portal\resources\views/galleries/index.blade.php ENDPATH**/ ?>

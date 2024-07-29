@@ -3,9 +3,7 @@
 <?php $__env->startSection('content'); ?>
     <div class="container">
         <h1>News Categories</h1>
-        <div class="d-flex justify-content-end mb-2">
-            <a href="<?php echo e(route('news-categories.create')); ?>" class="btn btn-primary">Create New Category</a>
-        </div>
+        <a href="<?php echo e(route('news-categories.create')); ?>" class="btn btn-primary mb-2">Create New Category</a>
         <table class="table">
             <thead>
                 <tr>

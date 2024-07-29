@@ -20,6 +20,7 @@
                 <th>Category</th>
                 <th>Published Date</th>
                 <th>Status</th>
+                <th>Image</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -31,6 +32,13 @@
                     <td><?php echo e($newsItem->newsCategory->title ?? 'N/A'); ?></td>
                     <td><?php echo e($newsItem->published_date); ?></td>
                     <td><?php echo e($newsItem->status ? 'Active' : 'Inactive'); ?></td>
+                    <td>
+                        <?php if($newsItem->image): ?>
+                            <img src="<?php echo e(asset('storage/'.$newsItem->image)); ?>" height="50">
+                        <?php else: ?>
+                            No Image
+                        <?php endif; ?>
+                    </td>
                     <td class="d-flex">
                         <a class="btn btn-secondary mr-2" href="<?php echo e(route('news.show', $newsItem->id)); ?>">Show</a>
                         <a class="btn btn-primary mr-2" href="<?php echo e(route('news.edit', $newsItem->id)); ?>">Edit</a>

@@ -23,6 +23,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
     <style>
          /* Adjust the image inside carousel */
         .main-carousel .position-relative {
@@ -330,6 +331,7 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+    
 
 
     <!-- JavaScript Libraries -->
